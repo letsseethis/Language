@@ -79,6 +79,7 @@ class Position:
     self.col = col
     self.fn = fn
     self.ftxt = ftxt
+
   def advance(self, current_char=None):
     self.idx += 1
     self.col += 1
@@ -453,7 +454,7 @@ class WhileNode:
     self.condition_node = condition_node
     self.body_node = body_node
     self.should_return_null = should_return_null
-    
+
     self.pos_start = self.condition_node.pos_start
     self.pos_end = self.body_node.pos_end
 
@@ -1702,6 +1703,8 @@ class BuiltInFunction(BaseFunction):
     text = input()
     return RTResult().success(String(text))
   execute_input.arg_names = []
+    
+    # What??
 
   def execute_input_int(self, exec_ctx):
     while True:
