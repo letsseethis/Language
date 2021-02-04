@@ -830,6 +830,9 @@ class Parser:
       "Expected int, float, identifier, '+', '-', '(', '[', IF', 'FOR', 'WHILE', 'FUN'"
     ))
 
+
+  print('Hello, World!')
+
   def list_expr(self):
     res = ParseResult()
     element_nodes = []
