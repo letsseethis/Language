@@ -2,7 +2,7 @@ import basic
 
 while True:
 	text = input('basic > ')
-	if text.strip() == "": continue
+	if text.strip() == '': continue
 	result, error = basic.run('<stdin>', text)
 
 	if error:
